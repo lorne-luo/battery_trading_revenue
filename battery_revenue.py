@@ -1,5 +1,5 @@
-def calc_interval_revenue(initial, target):
-    """calculate revenue in 5mins by initial and target"""
+def calc_interval_discharge(initial, target):
+    """calculate discharged power in 5 mins interval"""
     # the ramp are under 0, indicate it's charing in whole interval, no revenue generated
     if initial <= 0 and target <= 0:
         return 0
@@ -15,3 +15,12 @@ def calc_interval_revenue(initial, target):
     charge_rate = max(initial, target)
     charge_ratio = abs(charge_rate) / (abs(initial) + abs(target))
     return charge_rate / 24 * charge_ratio
+
+
+def calc_interval_charge(initial, target):
+    """
+    calculate charged power in 5 mins interval
+    here reused calc_interval_discharge
+    """
+
+    return calc_interval_discharge(initial * -1, target * -1)
