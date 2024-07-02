@@ -6,16 +6,19 @@ Refer [this doc](Coding_practice_python_developer.docx)
 
 ## Quick Answer
 
-### SQL Challenge
+### 1.SQL Challenge
 
 - [Question 1 answer](sql/q1.sql)
 - [Question 2 answer](sql/q2.sql)
 - [Question 3 answer](sql/q3.sql)
 
-### Battery Trading Revenue
+### 2.Battery Trading Revenue
 
 - Total revenue is $8530.08
 - Battery conversion rate is 80.96%
+
+### 3. Tennis Game Issue in Interview
+The chance for game finished in 2 rounds is 2/23, please check [detail here](tennis_game.md).
 
 ## How to install and run
 
